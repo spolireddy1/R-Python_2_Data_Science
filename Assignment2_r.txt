@@ -262,7 +262,7 @@ for(airport_index in 1:length(Airport)){
 
 
 
-Question C
+Question C( JUST TO PRINT ALL INDEXES)
 for(airport_index in 1:length(Airport)){
 passenger_count <- 0
 	if( Scheduled.Departures[airport_index] < Performed.Departures[airport_index]){
@@ -393,3 +393,21 @@ passenger_count <- 0
 [1] 747329
 [1] 381840
 [1] 561432
+
+
+
+
+Question C (Actual total passenger count)
+passenger_count <- 0
+for(airport_index in 1:length(Airport)){
+
+	if( Scheduled.Departures[airport_index] < Performed.Departures[airport_index]){
+		passenger_count <-  passenger_count + (Passengers[airport_index])
+		
+	}
+	
+}
+print(passenger_count)
+
+The total passengers went through these airports
+[1] 372076342
